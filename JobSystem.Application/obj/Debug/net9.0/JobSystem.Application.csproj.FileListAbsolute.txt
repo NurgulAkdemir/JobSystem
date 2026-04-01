@@ -1,0 +1,15 @@
+D:\paralel_programlama\JobSystem\JobSystem.Application\bin\Debug\net9.0\JobSystem.Application.deps.json
+D:\paralel_programlama\JobSystem\JobSystem.Application\bin\Debug\net9.0\JobSystem.Application.dll
+D:\paralel_programlama\JobSystem\JobSystem.Application\bin\Debug\net9.0\JobSystem.Application.pdb
+D:\paralel_programlama\JobSystem\JobSystem.Application\bin\Debug\net9.0\JobSystem.Domain.dll
+D:\paralel_programlama\JobSystem\JobSystem.Application\bin\Debug\net9.0\JobSystem.Domain.pdb
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.csproj.AssemblyReference.cache
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.AssemblyInfoInputs.cache
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.AssemblyInfo.cs
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.csproj.CoreCompileInputs.cache
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSyste.E7B4E1D5.Up2Date
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.dll
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\refint\JobSystem.Application.dll
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.pdb
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\ref\JobSystem.Application.dll

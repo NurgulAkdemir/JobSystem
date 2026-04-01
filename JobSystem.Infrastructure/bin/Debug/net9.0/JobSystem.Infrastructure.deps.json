@@ -1,0 +1,55 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "JobSystem.Infrastructure/1.0.0": {
+        "dependencies": {
+          "JobSystem.Application": "1.0.0"
+        },
+        "runtime": {
+          "JobSystem.Infrastructure.dll": {}
+        }
+      },
+      "JobSystem.Application/1.0.0": {
+        "dependencies": {
+          "JobSystem.Domain": "1.0.0"
+        },
+        "runtime": {
+          "JobSystem.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "JobSystem.Domain/1.0.0": {
+        "runtime": {
+          "JobSystem.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JobSystem.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JobSystem.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JobSystem.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
