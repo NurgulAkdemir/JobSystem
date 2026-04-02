@@ -13,3 +13,4 @@ D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSyste
 D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\refint\JobSystem.Application.dll
 D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.pdb
 D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\ref\JobSystem.Application.dll
+D:\paralel_programlama\JobSystem\JobSystem.Application\obj\Debug\net9.0\JobSystem.Application.sourcelink.json

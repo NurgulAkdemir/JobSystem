@@ -1,5 +1,7 @@
 using JobSystem.Application.Interfaces;
+using JobSystem.Infrastructure.Handlers;
 using JobSystem.Infrastructure.Queue;
+using JobSystem.Infrastructure.Workers;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -8,6 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IJobQueue, InMemoryJobQueue>();
+builder.Services.AddHostedService<JobWorker>();
+builder.Services.AddSingleton<IJobHandler, EmailJobHandler>();
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

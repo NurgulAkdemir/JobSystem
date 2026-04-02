@@ -15,3 +15,4 @@ D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\obj\Debug\net9.0\JobSy
 D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\obj\Debug\net9.0\refint\JobSystem.Infrastructure.dll
 D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\obj\Debug\net9.0\JobSystem.Infrastructure.pdb
 D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\obj\Debug\net9.0\ref\JobSystem.Infrastructure.dll
+D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\obj\Debug\net9.0\JobSystem.Infrastructure.sourcelink.json

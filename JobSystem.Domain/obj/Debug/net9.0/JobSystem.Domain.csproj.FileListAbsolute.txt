@@ -9,3 +9,4 @@ D:\paralel_programlama\JobSystem\JobSystem.Domain\obj\Debug\net9.0\JobSystem.Dom
 D:\paralel_programlama\JobSystem\JobSystem.Domain\obj\Debug\net9.0\refint\JobSystem.Domain.dll
 D:\paralel_programlama\JobSystem\JobSystem.Domain\obj\Debug\net9.0\JobSystem.Domain.pdb
 D:\paralel_programlama\JobSystem\JobSystem.Domain\obj\Debug\net9.0\ref\JobSystem.Domain.dll
+D:\paralel_programlama\JobSystem\JobSystem.Domain\obj\Debug\net9.0\JobSystem.Domain.sourcelink.json
