@@ -8,9 +8,10 @@ public class EmailJobHandler : IJobHandler
 {
     public string JobType => "Email";
 
-    public Task HandleAsync(Job job)
+    public async Task HandleAsync(Job job)
     {
-        Console.WriteLine($"📧 Email gönderildi: {job.Payload}");
-        return Task.CompletedTask;
+        Console.WriteLine($"Email işleniyor: {job.Id}");
+
+        await Task.Delay(3000); // paralelliği görmek için
     }
 }
