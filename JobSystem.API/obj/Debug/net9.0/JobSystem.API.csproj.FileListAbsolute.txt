@@ -76,3 +76,13 @@ D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\runtimes\win\lib
 D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Text.Encodings.Web.dll
 D:\paralel_programlama\JobSystem\JobSystem.API\obj\Debug\net9.0\JobSystem.API.sourcelink.json
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.AspNetCore.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+D:\paralel_programlama\JobSystem\JobSystem.API\bin\Debug\net9.0\Serilog.Sinks.File.dll

@@ -17,13 +17,15 @@ public class JobsController : ControllerBase
     }
 
      private readonly IJobQueue _jobQueue;
+     private readonly IDeadLetterQueue _deadLetterQueue;
 
-    public JobsController(IJobQueue jobQueue)
+    public JobsController(IJobQueue jobQueue, IDeadLetterQueue deadLetterQueue)
     {
         _jobQueue = jobQueue;
+        _deadLetterQueue = deadLetterQueue;
     }
 
-     [HttpPost]
+    [HttpPost]
     public IActionResult CreateJob()
     {
         var job = new Job
@@ -35,6 +37,13 @@ public class JobsController : ControllerBase
         _jobQueue.Enqueue(job);
 
         return Ok(job.Id);
+    }
+    
+    [HttpGet("dead")]
+    public IActionResult GetDeadJobs()
+    {
+        var jobs = _deadLetterQueue.GetAll();
+        return Ok(jobs);
     }
 }
 

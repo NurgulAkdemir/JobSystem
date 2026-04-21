@@ -2,14 +2,24 @@ using JobSystem.Application.Interfaces;
 using JobSystem.Infrastructure.Handlers;
 using JobSystem.Infrastructure.Queue;
 using JobSystem.Infrastructure.Workers;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog();
 builder.Services.AddControllers();
+
 
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IJobQueue, InMemoryJobQueue>();
+builder.Services.AddSingleton<IDeadLetterQueue, InMemoryDeadLetterQueue>();
 builder.Services.AddHostedService<JobWorker>();
 builder.Services.AddSingleton<IJobHandler, EmailJobHandler>();
 
