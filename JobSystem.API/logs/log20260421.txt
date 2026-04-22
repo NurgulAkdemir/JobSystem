@@ -83,3 +83,52 @@
 2026-04-21 15:51:17.394 +03:00 [ERR] Hata: DLQ test hatası
 2026-04-21 15:51:17.397 +03:00 [ERR] Job DLQ'ya gönderildi: "aa0e1b44-fa58-4d1f-a0e0-1017e634633b"
 2026-04-21 15:52:16.565 +03:00 [INF] Application is shutting down...
+2026-04-21 17:22:20.891 +03:00 [INF] Worker başladı
+2026-04-21 17:22:20.966 +03:00 [INF] Now listening on: http://localhost:5163
+2026-04-21 17:22:20.969 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-21 17:22:20.970 +03:00 [INF] Hosting environment: Development
+2026-04-21 17:22:20.971 +03:00 [INF] Content root path: D:\paralel_programlama\JobSystem\JobSystem.API
+2026-04-21 17:22:26.010 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/index.html - null null
+2026-04-21 17:22:26.345 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/index.html - 200 null text/html;charset=utf-8 340.3344ms
+2026-04-21 17:22:26.517 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - null null
+2026-04-21 17:22:26.669 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.0301ms
+2026-04-21 17:22:34.821 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/jobs - null 0
+2026-04-21 17:22:34.846 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-21 17:22:34.856 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-04-21 17:22:34.906 +03:00 [INF] Route matched with {action = "CreateJob", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJob() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-04-21 17:22:34.930 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2026-04-21 17:22:34.961 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API) in 42.296ms
+2026-04-21 17:22:34.967 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-04-21 17:22:34.971 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/jobs - 200 null application/json; charset=utf-8 149.2487ms
+2026-04-21 17:22:35.035 +03:00 [INF] Job başladı
+2026-04-21 17:22:35.040 +03:00 [INF] Email işleniyor: "a4731f03-8ee4-44e2-98a2-8e4731b0c15a"
+2026-04-21 17:22:38.059 +03:00 [ERR] Hata: DLQ test hatası
+2026-04-21 17:22:38.061 +03:00 [WRN] Retry ediliyor: "a4731f03-8ee4-44e2-98a2-8e4731b0c15a"
+2026-04-21 17:22:38.069 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/jobs - null 0
+2026-04-21 17:22:38.077 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-04-21 17:22:38.082 +03:00 [INF] Route matched with {action = "CreateJob", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJob() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-04-21 17:22:38.088 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2026-04-21 17:22:38.089 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API) in 2.3056ms
+2026-04-21 17:22:38.091 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-04-21 17:22:38.096 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/jobs - 200 null application/json; charset=utf-8 27.1816ms
+2026-04-21 17:22:38.151 +03:00 [INF] Job başladı
+2026-04-21 17:22:38.153 +03:00 [INF] Email işleniyor: "a4731f03-8ee4-44e2-98a2-8e4731b0c15a"
+2026-04-21 17:22:38.366 +03:00 [INF] Job başladı
+2026-04-21 17:22:38.368 +03:00 [INF] Email işleniyor: "0cbb2c7a-9d99-4a99-8fa4-d61f6096ec05"
+2026-04-21 17:22:41.167 +03:00 [ERR] Hata: DLQ test hatası
+2026-04-21 17:22:41.174 +03:00 [WRN] Retry ediliyor: "a4731f03-8ee4-44e2-98a2-8e4731b0c15a"
+2026-04-21 17:22:41.292 +03:00 [INF] Job başladı
+2026-04-21 17:22:41.295 +03:00 [INF] Email işleniyor: "a4731f03-8ee4-44e2-98a2-8e4731b0c15a"
+2026-04-21 17:22:41.375 +03:00 [ERR] Hata: DLQ test hatası
+2026-04-21 17:22:41.380 +03:00 [WRN] Retry ediliyor: "0cbb2c7a-9d99-4a99-8fa4-d61f6096ec05"
+2026-04-21 17:22:41.508 +03:00 [INF] Job başladı
+2026-04-21 17:22:41.513 +03:00 [INF] Email işleniyor: "0cbb2c7a-9d99-4a99-8fa4-d61f6096ec05"
+2026-04-21 17:22:44.314 +03:00 [ERR] Hata: DLQ test hatası
+2026-04-21 17:22:44.315 +03:00 [ERR] Job DLQ'ya gönderildi: "a4731f03-8ee4-44e2-98a2-8e4731b0c15a"
+2026-04-21 17:22:44.526 +03:00 [ERR] Hata: DLQ test hatası
+2026-04-21 17:22:44.530 +03:00 [WRN] Retry ediliyor: "0cbb2c7a-9d99-4a99-8fa4-d61f6096ec05"
+2026-04-21 17:22:44.641 +03:00 [INF] Job başladı
+2026-04-21 17:22:44.644 +03:00 [INF] Email işleniyor: "0cbb2c7a-9d99-4a99-8fa4-d61f6096ec05"
+2026-04-21 17:22:47.653 +03:00 [ERR] Hata: DLQ test hatası
+2026-04-21 17:22:47.657 +03:00 [ERR] Job DLQ'ya gönderildi: "0cbb2c7a-9d99-4a99-8fa4-d61f6096ec05"
+2026-04-21 17:34:15.188 +03:00 [INF] Application is shutting down...

@@ -18,11 +18,13 @@ public class JobsController : ControllerBase
 
      private readonly IJobQueue _jobQueue;
      private readonly IDeadLetterQueue _deadLetterQueue;
+     private readonly IJobMetricsService _metrics;
 
-    public JobsController(IJobQueue jobQueue, IDeadLetterQueue deadLetterQueue)
+    public JobsController(IJobQueue jobQueue, IDeadLetterQueue deadLetterQueue, IJobMetricsService metrics)
     {
         _jobQueue = jobQueue;
         _deadLetterQueue = deadLetterQueue;
+        _metrics = metrics;
     }
 
     [HttpPost]
@@ -44,6 +46,13 @@ public class JobsController : ControllerBase
     {
         var jobs = _deadLetterQueue.GetAll();
         return Ok(jobs);
+    }
+
+    [HttpGet("stats")]
+    public IActionResult GetStats()
+    {
+        var stats = _metrics.GetMetrics();
+        return Ok(stats);
     }
 }
 

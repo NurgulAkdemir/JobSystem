@@ -1,0 +1,65 @@
+2026-04-22 16:30:05.428 +03:00 [INF] Worker başladı
+2026-04-22 16:30:05.599 +03:00 [INF] Now listening on: http://localhost:5163
+2026-04-22 16:30:05.605 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-22 16:30:05.608 +03:00 [INF] Hosting environment: Development
+2026-04-22 16:30:05.610 +03:00 [INF] Content root path: D:\paralel_programlama\JobSystem\JobSystem.API
+2026-04-22 16:31:05.582 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-04-22 16:31:05.673 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-22 16:31:05.691 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 113.212ms
+2026-04-22 16:31:05.743 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-04-22 16:31:09.101 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/index.html - null null
+2026-04-22 16:31:09.371 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/index.html - 200 null text/html;charset=utf-8 271.1459ms
+2026-04-22 16:31:09.384 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui-bundle.js - null null
+2026-04-22 16:31:09.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-22 16:31:09.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui.css - null null
+2026-04-22 16:31:09.430 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-04-22 16:31:09.430 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-04-22 16:31:09.436 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 50.9799ms
+2026-04-22 16:31:09.436 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui.css - 200 144929 text/css 50.6714ms
+2026-04-22 16:31:09.436 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-04-22 16:31:09.451 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 67.0463ms
+2026-04-22 16:31:09.963 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - null null
+2026-04-22 16:31:10.088 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.2348ms
+2026-04-22 16:31:15.797 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/jobs - null 0
+2026-04-22 16:31:15.813 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-04-22 16:31:15.855 +03:00 [INF] Route matched with {action = "CreateJob", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJob() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-04-22 16:31:15.874 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2026-04-22 16:31:15.904 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API) in 35.2259ms
+2026-04-22 16:31:15.908 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-04-22 16:31:15.911 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/jobs - 200 null application/json; charset=utf-8 114.4862ms
+2026-04-22 16:31:15.926 +03:00 [INF] Job başladı
+2026-04-22 16:31:15.930 +03:00 [INF] Email işleniyor: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+2026-04-22 16:31:18.939 +03:00 [ERR] Hata oluştu: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-04-22 16:31:18.953 +03:00 [WRN] Retry ediliyor: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+2026-04-22 16:31:19.083 +03:00 [INF] Job başladı
+2026-04-22 16:31:19.086 +03:00 [INF] Email işleniyor: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+2026-04-22 16:31:22.096 +03:00 [ERR] Hata oluştu: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-04-22 16:31:22.101 +03:00 [WRN] Retry ediliyor: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+2026-04-22 16:31:22.202 +03:00 [INF] Job başladı
+2026-04-22 16:31:22.204 +03:00 [INF] Email işleniyor: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+2026-04-22 16:31:25.213 +03:00 [ERR] Hata oluştu: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-04-22 16:31:25.219 +03:00 [ERR] Job DLQ'ya gönderildi: "7e20b9f1-1970-4eaf-9356-33e9346460ea"
+2026-04-22 16:31:33.201 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/jobs/stats - null null
+2026-04-22 16:31:33.208 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.GetStats (JobSystem.API)'
+2026-04-22 16:31:33.222 +03:00 [INF] Route matched with {action = "GetStats", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetStats() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-04-22 16:31:33.230 +03:00 [INF] Executing OkObjectResult, writing value of type 'JobSystem.Domain.Entities.JobMetrics'.
+2026-04-22 16:31:33.243 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.GetStats (JobSystem.API) in 14.7292ms
+2026-04-22 16:31:33.246 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.GetStats (JobSystem.API)'
+2026-04-22 16:31:33.248 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/jobs/stats - 200 null application/json; charset=utf-8 46.6987ms
+2026-04-22 16:31:52.010 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/jobs/stats - null null
+2026-04-22 16:31:52.016 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.GetStats (JobSystem.API)'
+2026-04-22 16:31:52.019 +03:00 [INF] Route matched with {action = "GetStats", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetStats() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-04-22 16:31:52.023 +03:00 [INF] Executing OkObjectResult, writing value of type 'JobSystem.Domain.Entities.JobMetrics'.
+2026-04-22 16:31:52.029 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.GetStats (JobSystem.API) in 6.1951ms
+2026-04-22 16:31:52.031 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.GetStats (JobSystem.API)'
+2026-04-22 16:31:52.035 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/jobs/stats - 200 null application/json; charset=utf-8 25.1199ms
+2026-04-22 17:11:41.621 +03:00 [INF] Application is shutting down...

@@ -1,6 +1,7 @@
 using JobSystem.Application.Interfaces;
 using JobSystem.Infrastructure.Handlers;
 using JobSystem.Infrastructure.Queue;
+using JobSystem.Infrastructure.Services;
 using JobSystem.Infrastructure.Workers;
 using Serilog;
 
@@ -20,6 +21,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IJobQueue, InMemoryJobQueue>();
 builder.Services.AddSingleton<IDeadLetterQueue, InMemoryDeadLetterQueue>();
+builder.Services.AddSingleton<IJobMetricsService, JobMetricsService>();
 builder.Services.AddHostedService<JobWorker>();
 builder.Services.AddSingleton<IJobHandler, EmailJobHandler>();
 
