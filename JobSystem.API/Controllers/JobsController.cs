@@ -54,6 +54,18 @@ public class JobsController : ControllerBase
         var stats = _metrics.GetMetrics();
         return Ok(stats);
     }
+    [HttpGet("dead/count")]
+    public IActionResult GetDeadCount()
+    {
+        var count = _deadLetterQueue.GetAll().Count;
+        return Ok(new { deadCount = count });
+    }
+    [HttpPost("stats/reset")]
+    public IActionResult ResetStats()
+    {
+        _metrics.Reset();
+        return Ok("Metrics resetlendi");
+    }
 }
 
 

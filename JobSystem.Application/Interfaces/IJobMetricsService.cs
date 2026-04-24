@@ -8,6 +8,7 @@ public interface IJobMetricsService
     void IncrementSuccess();
     void IncrementFailed();
     void IncrementRetry();
+    void Reset();
 
     JobMetrics GetMetrics();
 }

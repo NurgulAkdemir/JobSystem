@@ -13,4 +13,12 @@ public class JobMetricsService : IJobMetricsService
     public void IncrementRetry()=> _metrics.RetriedJobs++;
 
     public JobMetrics GetMetrics()=> _metrics;
+
+    public void Reset()
+    {
+        _metrics.TotalJobs = 0;
+        _metrics.SuccessJobs = 0;
+        _metrics.FailedJobs = 0;
+        _metrics.RetriedJobs = 0;
+    }
 }
