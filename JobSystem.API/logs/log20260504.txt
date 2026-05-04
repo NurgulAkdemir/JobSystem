@@ -44,3 +44,198 @@
 2026-05-04 10:21:04.577 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 2.4151ms
 2026-05-04 10:21:04.581 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
 2026-05-04 10:25:21.355 +03:00 [INF] Application is shutting down...
+2026-05-04 13:08:49.705 +03:00 [INF] Worker başladı
+2026-05-04 13:08:49.791 +03:00 [INF] Now listening on: http://localhost:5163
+2026-05-04 13:08:49.793 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 13:08:49.794 +03:00 [INF] Hosting environment: Development
+2026-05-04 13:08:49.795 +03:00 [INF] Content root path: D:\paralel_programlama\JobSystem\JobSystem.API
+2026-05-04 13:08:52.881 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/index.html - null null
+2026-05-04 13:08:53.002 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/index.html - 200 null text/html;charset=utf-8 121.8836ms
+2026-05-04 13:08:53.150 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - null null
+2026-05-04 13:08:53.154 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/favicon-32x32.png - null null
+2026-05-04 13:08:53.172 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-04 13:08:53.174 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/favicon-32x32.png - 200 628 image/png 19.9687ms
+2026-05-04 13:08:53.204 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.9545ms
+2026-05-04 13:08:59.779 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/jobs - null 0
+2026-05-04 13:08:59.786 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-05-04 13:08:59.791 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-05-04 13:08:59.811 +03:00 [INF] Route matched with {action = "CreateJob", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJob() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-05-04 13:08:59.819 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2026-05-04 13:08:59.831 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API) in 15.6175ms
+2026-05-04 13:08:59.833 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-05-04 13:08:59.834 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/jobs - 200 null application/json; charset=utf-8 55.5678ms
+2026-05-04 13:08:59.881 +03:00 [INF] Job başladı
+2026-05-04 13:08:59.883 +03:00 [INF] Email işleniyor: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+2026-05-04 13:09:02.890 +03:00 [ERR] Hata oluştu: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-05-04 13:09:02.913 +03:00 [WRN] Retry ediliyor: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+2026-05-04 13:09:02.969 +03:00 [INF] Job başladı
+2026-05-04 13:09:02.970 +03:00 [INF] Email işleniyor: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+2026-05-04 13:09:05.979 +03:00 [ERR] Hata oluştu: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-05-04 13:09:05.982 +03:00 [WRN] Retry ediliyor: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+2026-05-04 13:09:06.031 +03:00 [INF] Job başladı
+2026-05-04 13:09:06.033 +03:00 [INF] Email işleniyor: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+2026-05-04 13:09:09.042 +03:00 [ERR] Hata oluştu: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-05-04 13:09:09.045 +03:00 [ERR] Job DLQ'ya gönderildi: "3cd9641e-6008-4079-95c9-c845c0c6eb43"
+2026-05-04 13:09:10.363 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/Dashboard - null null
+2026-05-04 13:09:10.368 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:09:10.375 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:09:10.380 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:09:10.383 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 4.9162ms
+2026-05-04 13:09:10.384 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:09:10.386 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/Dashboard - 200 746 text/html 23.3834ms
+2026-05-04 13:09:20.640 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:09:20.642 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:09:20.643 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:09:20.645 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:09:20.646 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.6486ms
+2026-05-04 13:09:20.648 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:09:20.650 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 10.3658ms
+2026-05-04 13:09:20.700 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/favicon.ico - null null
+2026-05-04 13:09:20.702 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/favicon.ico - 404 0 null 2.7335ms
+2026-05-04 13:09:20.706 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/favicon.ico, Response status code: 404
+2026-05-04 13:09:36.282 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/jobs/dead/count - null null
+2026-05-04 13:09:36.292 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API)'
+2026-05-04 13:09:36.296 +03:00 [INF] Route matched with {action = "GetDeadCount", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDeadCount() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-05-04 13:09:36.300 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-04 13:09:36.309 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API) in 9.4664ms
+2026-05-04 13:09:36.310 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API)'
+2026-05-04 13:09:36.312 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/jobs/dead/count - 200 null application/json; charset=utf-8 30.1469ms
+2026-05-04 13:09:38.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/index.html - null null
+2026-05-04 13:09:38.387 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/index.html - 200 null text/html;charset=utf-8 2.4388ms
+2026-05-04 13:09:38.777 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - null null
+2026-05-04 13:09:38.783 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.7778ms
+2026-05-04 13:09:40.795 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:09:40.797 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:09:40.798 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:09:40.802 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:09:40.803 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.0136ms
+2026-05-04 13:09:40.804 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:09:40.806 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 10.625ms
+2026-05-04 13:09:44.741 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/jobs/dead/count - null null
+2026-05-04 13:09:44.744 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API)'
+2026-05-04 13:09:44.745 +03:00 [INF] Route matched with {action = "GetDeadCount", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDeadCount() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-05-04 13:09:44.748 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-04 13:09:44.750 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API) in 2.2884ms
+2026-05-04 13:09:44.752 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API)'
+2026-05-04 13:09:44.753 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/jobs/dead/count - 200 null application/json; charset=utf-8 12.3352ms
+2026-05-04 13:09:49.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/jobs/dead/count - null null
+2026-05-04 13:09:49.802 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API)'
+2026-05-04 13:09:49.804 +03:00 [INF] Route matched with {action = "GetDeadCount", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDeadCount() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-05-04 13:09:49.807 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-04 13:09:49.809 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API) in 1.8935ms
+2026-05-04 13:09:49.810 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.GetDeadCount (JobSystem.API)'
+2026-05-04 13:09:49.811 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/jobs/dead/count - 200 null application/json; charset=utf-8 18.3431ms
+2026-05-04 13:10:09.060 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/jobs/stats/reset - null 0
+2026-05-04 13:10:09.069 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API)'
+2026-05-04 13:10:09.074 +03:00 [INF] Route matched with {action = "ResetStats", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ResetStats() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-05-04 13:10:09.076 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-04 13:10:09.077 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API) in 2.1038ms
+2026-05-04 13:10:09.079 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API)'
+2026-05-04 13:10:09.080 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/jobs/stats/reset - 200 null text/plain; charset=utf-8 19.783ms
+2026-05-04 13:10:14.433 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:14.436 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:14.438 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:14.439 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:14.440 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.0102ms
+2026-05-04 13:10:14.441 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:14.443 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 9.4593ms
+2026-05-04 13:10:34.698 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/jobs/stats/reset - null 0
+2026-05-04 13:10:34.701 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API)'
+2026-05-04 13:10:34.702 +03:00 [INF] Route matched with {action = "ResetStats", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ResetStats() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-05-04 13:10:34.704 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-04 13:10:34.706 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API) in 2.0809ms
+2026-05-04 13:10:34.708 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API)'
+2026-05-04 13:10:34.709 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/jobs/stats/reset - 200 null text/plain; charset=utf-8 11.5585ms
+2026-05-04 13:10:34.915 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/jobs/stats/reset - null 0
+2026-05-04 13:10:34.918 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API)'
+2026-05-04 13:10:34.919 +03:00 [INF] Route matched with {action = "ResetStats", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ResetStats() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-05-04 13:10:34.922 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-04 13:10:34.925 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API) in 2.771ms
+2026-05-04 13:10:34.926 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API)'
+2026-05-04 13:10:34.927 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/jobs/stats/reset - 200 null text/plain; charset=utf-8 12.2319ms
+2026-05-04 13:10:37.930 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:37.935 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:37.936 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:37.937 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:37.938 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.0256ms
+2026-05-04 13:10:37.940 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:37.942 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 11.3021ms
+2026-05-04 13:10:39.252 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:39.254 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:39.255 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:39.257 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:39.259 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.5567ms
+2026-05-04 13:10:39.260 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:39.261 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 8.7414ms
+2026-05-04 13:10:40.098 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:40.100 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:40.102 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:40.104 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:40.105 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.1601ms
+2026-05-04 13:10:40.106 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:40.107 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 9.4044ms
+2026-05-04 13:10:40.319 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:40.322 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:40.322 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:40.324 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:40.325 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 0.8678ms
+2026-05-04 13:10:40.326 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:40.327 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 8.5887ms
+2026-05-04 13:10:47.933 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/controller/stats/reset - null 0
+2026-05-04 13:10:47.942 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API)'
+2026-05-04 13:10:47.945 +03:00 [INF] Route matched with {action = "ResetStats", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ResetStats() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-05-04 13:10:47.948 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-04 13:10:47.950 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API) in 2.1398ms
+2026-05-04 13:10:47.952 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.ResetStats (JobSystem.API)'
+2026-05-04 13:10:47.952 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/controller/stats/reset - 200 null text/plain; charset=utf-8 19.3407ms
+2026-05-04 13:10:51.355 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:51.357 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:51.358 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:51.360 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:51.361 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.0797ms
+2026-05-04 13:10:51.362 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:51.363 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 7.3617ms
+2026-05-04 13:10:52.598 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:52.600 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:52.601 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:52.603 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:52.604 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 0.8533ms
+2026-05-04 13:10:52.605 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:52.606 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 8.0129ms
+2026-05-04 13:10:52.779 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:52.781 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:52.782 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:52.783 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:52.784 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.03ms
+2026-05-04 13:10:52.785 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:52.786 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 7.2433ms
+2026-05-04 13:10:52.961 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:52.964 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:52.965 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:52.968 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:52.969 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.3747ms
+2026-05-04 13:10:52.970 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:52.971 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 10.4405ms
+2026-05-04 13:10:53.138 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:53.140 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:53.141 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:53.143 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:53.144 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.1763ms
+2026-05-04 13:10:53.145 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:53.146 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 8.7117ms
+2026-05-04 13:10:53.360 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-05-04 13:10:53.363 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:53.365 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 13:10:53.367 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 13:10:53.369 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.4933ms
+2026-05-04 13:10:53.370 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 13:10:53.371 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 10.465ms
