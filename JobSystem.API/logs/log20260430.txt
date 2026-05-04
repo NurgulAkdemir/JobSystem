@@ -1,0 +1,82 @@
+2026-04-30 13:30:28.368 +03:00 [INF] Worker başladı
+2026-04-30 13:30:28.429 +03:00 [INF] Now listening on: http://localhost:5163
+2026-04-30 13:30:28.431 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-30 13:30:28.432 +03:00 [INF] Hosting environment: Development
+2026-04-30 13:30:28.432 +03:00 [INF] Content root path: D:\paralel_programlama\JobSystem\JobSystem.API
+2026-04-30 13:30:33.997 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/index.html - null null
+2026-04-30 13:30:34.104 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/index.html - 200 null text/html;charset=utf-8 108.294ms
+2026-04-30 13:30:34.138 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui-bundle.js - null null
+2026-04-30 13:30:34.138 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui.css - null null
+2026-04-30 13:30:34.138 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui-standalone-preset.js - null null
+2026-04-30 13:30:34.163 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-04-30 13:30:34.163 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-04-30 13:30:34.166 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui.css - 200 144929 text/css 28.1431ms
+2026-04-30 13:30:34.166 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 28.2384ms
+2026-04-30 13:30:34.167 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-04-30 13:30:34.176 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 37.99ms
+2026-04-30 13:30:34.394 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - null null
+2026-04-30 13:30:34.450 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.8353ms
+2026-04-30 13:30:46.211 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/Dashboard - null null
+2026-04-30 13:30:46.218 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-30 13:30:46.223 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-04-30 13:30:46.239 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-04-30 13:30:46.244 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-04-30 13:30:46.248 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 4.0362ms
+2026-04-30 13:30:46.250 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-04-30 13:30:46.251 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/Dashboard - 200 746 text/html 40.1343ms
+2026-04-30 13:30:53.440 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-04-30 13:30:53.443 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 3.408ms
+2026-04-30 13:30:53.447 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-04-30 13:31:00.079 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-04-30 13:31:00.084 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 5.6666ms
+2026-04-30 13:31:00.090 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-04-30 13:31:26.857 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/index.html - null null
+2026-04-30 13:31:26.861 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/index.html - 200 null text/html;charset=utf-8 3.8275ms
+2026-04-30 13:31:27.208 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - null null
+2026-04-30 13:31:27.212 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.8988ms
+2026-04-30 13:31:39.005 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5163/api/jobs - null 0
+2026-04-30 13:31:39.015 +03:00 [INF] Executing endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-04-30 13:31:39.018 +03:00 [INF] Route matched with {action = "CreateJob", controller = "Jobs"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateJob() on controller JobSystem.API.Controllers.JobsController (JobSystem.API).
+2026-04-30 13:31:39.022 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2026-04-30 13:31:39.029 +03:00 [INF] Executed action JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API) in 8.6924ms
+2026-04-30 13:31:39.030 +03:00 [INF] Executed endpoint 'JobSystem.API.Controllers.JobsController.CreateJob (JobSystem.API)'
+2026-04-30 13:31:39.031 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5163/api/jobs - 200 null application/json; charset=utf-8 25.7846ms
+2026-04-30 13:31:39.033 +03:00 [INF] Job başladı
+2026-04-30 13:31:39.036 +03:00 [INF] Email işleniyor: "49621754-20d8-494c-b129-3d915d49a7cf"
+2026-04-30 13:31:42.051 +03:00 [ERR] Hata oluştu: "49621754-20d8-494c-b129-3d915d49a7cf"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-04-30 13:31:42.075 +03:00 [WRN] Retry ediliyor: "49621754-20d8-494c-b129-3d915d49a7cf"
+2026-04-30 13:31:42.157 +03:00 [INF] Job başladı
+2026-04-30 13:31:42.158 +03:00 [INF] Email işleniyor: "49621754-20d8-494c-b129-3d915d49a7cf"
+2026-04-30 13:31:43.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/Dashboard - null null
+2026-04-30 13:31:43.177 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-04-30 13:31:43.178 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-04-30 13:31:43.181 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-04-30 13:31:43.183 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.8193ms
+2026-04-30 13:31:43.184 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-04-30 13:31:43.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/Dashboard - 200 746 text/html 11.0815ms
+2026-04-30 13:31:45.172 +03:00 [ERR] Hata oluştu: "49621754-20d8-494c-b129-3d915d49a7cf"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-04-30 13:31:45.176 +03:00 [WRN] Retry ediliyor: "49621754-20d8-494c-b129-3d915d49a7cf"
+2026-04-30 13:31:45.250 +03:00 [INF] Job başladı
+2026-04-30 13:31:45.252 +03:00 [INF] Email işleniyor: "49621754-20d8-494c-b129-3d915d49a7cf"
+2026-04-30 13:31:48.265 +03:00 [ERR] Hata oluştu: "49621754-20d8-494c-b129-3d915d49a7cf"
+System.Exception: DLQ test hatası
+   at JobSystem.Infrastructure.Handlers.EmailJobHandler.HandleAsync(Job job) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Handlers\EmailJobHandler.cs:line 24
+   at JobSystem.Infrastructure.Workers.JobWorker.ProcessJobAsync(Job job, CancellationToken stoppingToken) in D:\paralel_programlama\JobSystem\JobSystem.Infrastructure\Workers\JobWorker.cs:line 64
+2026-04-30 13:31:48.271 +03:00 [ERR] Job DLQ'ya gönderildi: "49621754-20d8-494c-b129-3d915d49a7cf"
+2026-04-30 13:32:54.718 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/dashboard - null null
+2026-04-30 13:32:54.721 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-04-30 13:32:54.723 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-04-30 13:32:54.726 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-04-30 13:32:54.727 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 1.8277ms
+2026-04-30 13:32:54.729 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-04-30 13:32:54.730 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/dashboard - 200 746 text/html 11.8381ms
+2026-04-30 13:32:54.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/favicon.ico - null null
+2026-04-30 13:32:54.782 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/favicon.ico - 404 0 null 3.6695ms
+2026-04-30 13:32:54.785 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/favicon.ico, Response status code: 404
+2026-04-30 14:14:28.547 +03:00 [INF] Application is shutting down...

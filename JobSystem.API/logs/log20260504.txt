@@ -1,0 +1,46 @@
+2026-05-04 10:20:25.558 +03:00 [INF] Worker başladı
+2026-05-04 10:20:25.637 +03:00 [INF] Now listening on: http://localhost:5163
+2026-05-04 10:20:25.640 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 10:20:25.641 +03:00 [INF] Hosting environment: Development
+2026-05-04 10:20:25.643 +03:00 [INF] Content root path: D:\paralel_programlama\JobSystem\JobSystem.API
+2026-05-04 10:20:30.872 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-05-04 10:20:30.903 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-05-04 10:20:30.912 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 42.4605ms
+2026-05-04 10:20:30.936 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-05-04 10:20:34.352 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-05-04 10:20:34.364 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 11.8171ms
+2026-05-04 10:20:34.369 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-05-04 10:20:34.636 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-05-04 10:20:34.640 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 3.9154ms
+2026-05-04 10:20:34.645 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-05-04 10:20:34.871 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-05-04 10:20:34.874 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 3.2561ms
+2026-05-04 10:20:34.879 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-05-04 10:20:35.074 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-05-04 10:20:35.078 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 3.4994ms
+2026-05-04 10:20:35.081 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-05-04 10:20:35.270 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-05-04 10:20:35.274 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 4.0397ms
+2026-05-04 10:20:35.277 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-05-04 10:20:39.349 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/index.html - null null
+2026-05-04 10:20:39.432 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/index.html - 200 null text/html;charset=utf-8 82.878ms
+2026-05-04 10:20:39.690 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - null null
+2026-05-04 10:20:39.740 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.4758ms
+2026-05-04 10:20:40.421 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/favicon-32x32.png - null null
+2026-05-04 10:20:40.434 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-04 10:20:40.435 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/favicon-32x32.png - 200 628 image/png 14.0659ms
+2026-05-04 10:20:47.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/api/Dashboard - null null
+2026-05-04 10:20:47.596 +03:00 [INF] Executing endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 10:20:47.611 +03:00 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetDashboard() on controller DashboardController (JobSystem.API).
+2026-05-04 10:20:47.616 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2026-05-04 10:20:47.621 +03:00 [INF] Executed action DashboardController.GetDashboard (JobSystem.API) in 4.6931ms
+2026-05-04 10:20:47.622 +03:00 [INF] Executed endpoint 'DashboardController.GetDashboard (JobSystem.API)'
+2026-05-04 10:20:47.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/api/Dashboard - 200 746 text/html 39.0188ms
+2026-05-04 10:20:53.559 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/index.html - null null
+2026-05-04 10:20:53.562 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/index.html - 200 null text/html;charset=utf-8 3.0352ms
+2026-05-04 10:20:53.857 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - null null
+2026-05-04 10:20:53.861 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.5632ms
+2026-05-04 10:21:04.575 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5163/ - null null
+2026-05-04 10:21:04.577 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5163/ - 404 0 null 2.4151ms
+2026-05-04 10:21:04.581 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5163/, Response status code: 404
+2026-05-04 10:25:21.355 +03:00 [INF] Application is shutting down...
